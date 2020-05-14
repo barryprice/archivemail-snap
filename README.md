@@ -13,9 +13,7 @@ distributions.</p>
 </p>
 -->
 
-<!-- Uncomment and modify this when you have a screenshot
 ![archivemail](screenshot.png?raw=true "archivemail")
--->
 
 <p align="center">Published for <img src="https://raw.githubusercontent.com/anythingcodes/slack-emoji-for-techies/gh-pages/emoji/tux.png" align="top" width="24" /> with 💝 by Snapcrafters</p>
 
@@ -30,22 +28,20 @@ distributions.</p>
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
 
 ## Remaining tasks
-<!-- Uncomment and modify this when you have a screenshot
-![my-snap-name](screenshot.png?raw=true "my-snap-name")
--->
+![archivemail](screenshot.png?raw=true "archivemail")
 
 Snapcrafters ([join us](https://forum.snapcraft.io/t/join-snapcrafters/1325)) 
 are working to land snap install documentation and
 the [snapcraft.yaml](https://github.com/snapcrafters/fork-and-rename-me/blob/master/snap/snapcraft.yaml)
-upstream so [Project] can authoritatively publish future releases.
+upstream so archivemail can authoritatively publish future releases.
 
-  - [x] Click the green "Use this template" button above to create a new repository based on this template
-  - [x] Give the newly created repository a sensible name, like `godzilla-snap` if you're snapping the Godzilla software
-  - [x] Update the description of the repository
-  - [x] Update logos and references to `[Project]` and `[my-snap-name]`
-  - [x] Create a snap that runs in `devmode`
-  - [x] Register the snap in the store, **using the preferred upstream name**
-  - [ ] Add a screenshot to this `README.md`
+  - [X] Click the green "Use this template" button above to create a new repository based on this template
+  - [X] Give the newly created repository a sensible name, like `godzilla-snap` if you're snapping the Godzilla software
+  - [X] Update the description of the repository
+  - [X] Update logos and references to `[Project]` and `[my-snap-name]`
+  - [X] Create a snap that runs in `devmode`
+  - [X] Register the snap in the store, **using the preferred upstream name**
+  - [X] Add a screenshot to this `README.md`
   - [ ] Publish the `devmode` snap in the Snap store edge channel
   - [ ] Add install instructions to this `README.md`
   - [ ] Update snap store metadata, icons and screenshots
