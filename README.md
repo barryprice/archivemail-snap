@@ -35,13 +35,13 @@ are working to land snap install documentation and
 the [snapcraft.yaml](https://github.com/snapcrafters/fork-and-rename-me/blob/master/snap/snapcraft.yaml)
 upstream so archivemail can authoritatively publish future releases.
 
-  - [X] Click the green "Use this template" button above to create a new repository based on this template
-  - [X] Give the newly created repository a sensible name, like `godzilla-snap` if you're snapping the Godzilla software
-  - [X] Update the description of the repository
-  - [X] Update logos and references to `[Project]` and `[my-snap-name]`
-  - [X] Create a snap that runs in `devmode`
-  - [X] Register the snap in the store, **using the preferred upstream name**
-  - [X] Add a screenshot to this `README.md`
+  - [x] Click the green "Use this template" button above to create a new repository based on this template
+  - [x] Give the newly created repository a sensible name, like `godzilla-snap` if you're snapping the Godzilla software
+  - [x] Update the description of the repository
+  - [x] Update logos and references to `[Project]` and `[my-snap-name]`
+  - [x] Create a snap that runs in `devmode`
+  - [x] Register the snap in the store, **using the preferred upstream name**
+  - [x] Add a screenshot to this `README.md`
   - [ ] Publish the `devmode` snap in the Snap store edge channel
   - [ ] Add install instructions to this `README.md`
   - [ ] Update snap store metadata, icons and screenshots
