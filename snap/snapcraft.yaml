@@ -9,9 +9,6 @@ description: |
   email rather than archive it.
 grade: stable
 confinement: strict
-architectures:
- - build-on: amd64
-   run-on: all
 apps:
   archivemail:
     command: archivemail
