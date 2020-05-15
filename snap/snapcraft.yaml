@@ -30,7 +30,7 @@ parts:
       snapcraftctl build
       make archivemail.1
       snapcraftctl set-version "$(./setup.py --version)"
-      mkdir -p $SNAPCRAFT_PART_INSTALL/bin
-      cp archivemail $SNAPCRAFT_PART_INSTALL/bin/
-      mkdir -p $SNAPCRAFT_PART_INSTALL/share/man/man1
-      cp archivemail.1 $SNAPCRAFT_PART_INSTALL/share/man/man1/
+      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/bin
+      cp archivemail $SNAPCRAFT_PART_INSTALL/usr/bin/
+      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/man/man1
+      cp archivemail.1 $SNAPCRAFT_PART_INSTALL/usr/share/man/man1/
