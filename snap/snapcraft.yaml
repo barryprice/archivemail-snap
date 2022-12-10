@@ -18,15 +18,18 @@ parts:
     plugin: nil
     source: git://archivemail.git.sourceforge.net/gitroot/archivemail/archivemail
     build-packages:
+    - docbook-xml
     - docbook-xsl
     - make
     - python
     - xsltproc
     stage-packages: [python]
     override-build: |
+      # build the latest tagged release
+      git checkout $(git tag --list | grep '^v' | tail -1)
+      snapcraftctl set-version "$(./setup.py --version)"
       snapcraftctl build
       make archivemail.1
-      snapcraftctl set-version "$(./setup.py --version)"
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/bin
       cp archivemail $SNAPCRAFT_PART_INSTALL/usr/bin/
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/man/man1
