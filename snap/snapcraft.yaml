@@ -1,5 +1,5 @@
 name: archivemail
-base: core18
+base: core20
 adopt-info: archivemail
 summary: archive and compress or delete your old email
 description: |
@@ -11,7 +11,7 @@ grade: stable
 confinement: strict
 apps:
   archivemail:
-    command: archivemail
+    command: usr/bin/archivemail
     plugs: [home]
 parts:
   archivemail:
@@ -21,14 +21,13 @@ parts:
     - docbook-xml
     - docbook-xsl
     - make
-    - python
+    - python2
     - xsltproc
     stage-packages: [python]
     override-build: |
       # build the latest tagged release
       git checkout $(git tag --list | grep '^v' | tail -1)
       snapcraftctl set-version "$(./setup.py --version)"
-      snapcraftctl build
       make archivemail.1
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/bin
       cp archivemail $SNAPCRAFT_PART_INSTALL/usr/bin/
