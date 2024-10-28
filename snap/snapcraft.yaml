@@ -1,5 +1,5 @@
 name: archivemail
-base: core20
+base: core20 # this is a python2 application, core20 was the last core to include it
 adopt-info: archivemail
 summary: archive and compress or delete your old email
 description: |
